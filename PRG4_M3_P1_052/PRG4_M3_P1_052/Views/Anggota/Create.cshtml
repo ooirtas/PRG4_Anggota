@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model PRG4_M3_P1_052.Models.Anggota
+@{
+    ViewData["Title"] = "Tambah Anggota";
+}
+
+<div class="content">
+    <div class="contrainer-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Tambah Anggota</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="nama" class="control-label">Nama</label>
+                                <input asp-for="nama" class="form-control" />
+                                <span asp-validation-for="nama" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="umur" class="control-label">Umur</label>
+                                <input asp-for="umur" class="form-control" />
+                                <span asp-validation-for="umur" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="alamat" class="control-label">Alamat</label>
+                                <input asp-for="alamat" class="form-control" />
+                                <span asp-validation-for="alamat" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="nohp" class="control-label">No. HP</label>
+                                <input asp-for="nohp" class="form-control" />
+                                <span asp-validation-for="nohp" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="sumbit" class="btn btn-primary">Simpan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

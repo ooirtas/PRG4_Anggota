@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model PRG4_M3_P1_052.Models.Buku
+@{
+    ViewData["Title"] = "Tambah Buku";
+}
+
+<div class="content">
+    <div class="contrainer-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Tambah Buku</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="judul" class="control-label">Judul</label>
+                                <input asp-for="judul" class="form-control" />
+                                <span asp-validation-for="judul" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="penulis" class="control-label">Penulis</label>
+                                <input asp-for="penulis" class="form-control" />
+                                <span asp-validation-for="penulis" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="penerbit" class="control-label">Penerbit</label>
+                                <input asp-for="penerbit" class="form-control" />
+                                <span asp-validation-for="penerbit" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="issn" class="control-label">ISSN</label>
+                                <input asp-for="issn" class="form-control" />
+                                <span asp-validation-for="issn" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="tahun" class="control-label">Tahun</label>
+                                <input asp-for="tahun" class="form-control" />
+                                <span asp-validation-for="tahun" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="sumbit" class="btn btn-primary">Simpan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
